@@ -1,4 +1,4 @@
-create table coffee
+create table COFFEE
 (
     coffee_id bigint identity
         constraint coffee_pk

@@ -1,4 +1,4 @@
-create table COFFEE
+create table TRADE.COFFEE
 (
     coffee_id bigint identity
         constraint coffee_pk
@@ -7,5 +7,3 @@ create table COFFEE
     origin nvarchar(20) not null,
     characteristics nvarchar(30) not null
 );
-
-exec sp_addextendedproperty 'MS_Description', 'Used to demo import', 'SCHEMA', 'dbo', 'TABLE', 'coffee';

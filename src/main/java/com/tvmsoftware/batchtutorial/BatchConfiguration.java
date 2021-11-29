@@ -51,7 +51,7 @@ public class BatchConfiguration {
     public JdbcBatchItemWriter<Coffee> writer(DataSource dataSource) {
         return new JdbcBatchItemWriterBuilder<Coffee>()
                 .itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())
-                .sql("INSERT INTO coffee (brand, origin, characteristics) VALUES (:brand, :origin, :characteristics)")
+                .sql("INSERT INTO TRADE.COFFEE (brand, origin, characteristics) VALUES (:brand, :origin, :characteristics)")
                 .dataSource(dataSource)
                 .build();
     }
